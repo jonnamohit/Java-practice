@@ -1,0 +1,44 @@
+
+import java.util.*;
+class pg2{
+    public static void main(String[] args){
+        int i;
+
+        ArrayList<Integer> arr=new ArrayList<>();
+        ArrayList<Integer> arr1=new ArrayList<>();
+
+        arr.add(10);arr1.add(2);
+
+        arr.add(20);arr1.add(20);
+        arr.add(30);arr1.add(30);
+        arr.add(40);arr1.add(6);
+
+        arr.set(1,50);
+        Collections.sort(arr);
+        arr.addAll(arr1);
+        Collections.sort(arr);
+
+
+        System.out.println(" "+arr.get(0));
+        System.out.println(" "+arr.get(3));
+        System.out.println(" "+arr); 
+
+        HashSet<Integer> list=new HashSet<>(arr);
+        ArrayList<Integer>hi=new ArrayList<>(list);
+        Collections.sort(hi);
+
+        System.out.println(" "+hi);
+
+       for(i=0;i<arr.size();i++){
+        if(arr.get(i)>30){
+            System.out.println(" "+arr.get(i));
+        }
+
+       }
+       
+       
+
+
+    }
+
+}
